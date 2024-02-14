@@ -11,7 +11,7 @@ bool Aimbot::CheckVisible( Vector& vecAbsStart, Vector& vecAbsEnd, BasePlayer* T
 	Ray_t Ray;
 	TraceFilterSkipTwoEntities TraceFilter( Target, 0 );
 
-	// todo: proper vis check
+	// todo: proper vis 1488
 
 	Ray.Init( vecAbsStart, vecAbsEnd );
 	g_pEngineTrace->TraceRay( Ray, 0x46004003, ( ITraceFilter* )&TraceFilter, &Trace );
